@@ -24,7 +24,7 @@ public class GenericCTMBlock extends Block {
 		add(staticRenderer);
 		add(new Collider(this));
 		add(new ItemRenderer(this));
-		staticRenderer.onRender(new ConnectedTextureRenderStream(this, edgeTexture).withFaceMask(0x3f).withTexture(edgeTexture).build());
+		staticRenderer.onRender(new ConnectedTextureRenderStream(this, edgeTexture).withTexture(texture).build());
 		//	private val renderer = add(new ConnectedTextureRenderer(this, ElectricContent.solarPanelTextureEdge)).setFaceMask(2)
 	}
 
